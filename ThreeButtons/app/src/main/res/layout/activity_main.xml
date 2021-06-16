@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/Coin_Screen"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.45"
+        android:background="@android:color/holo_orange_light"
+        android:gravity="center"
+        android:text="@string/Heads_text"
+        android:textColor="@android:color/white"
+        android:textSize="80sp" />
+
+    <TextView
+        android:id="@+id/Roshambo_Screen"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.45"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:text="@string/Scissors_text"
+        android:textColor="@color/white"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/hello_btn"
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_label_Hello"
+            android:onClick="replyHello"
+            app:backgroundTint="@android:color/holo_blue_dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="NestedWeights,UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/coin_btn"
+            android:layout_width="136dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_label_FlipCoin"
+            android:onClick="Flip_a_Coin"
+            app:backgroundTint="@android:color/holo_orange_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/hello_btn" />
+
+        <Button
+            android:id="@+id/rps_btn"
+            android:layout_width="136dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_label_Roshambo"
+            android:onClick="Play_Roshambo"
+            app:backgroundTint="@android:color/holo_blue_dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/coin_btn" />
+    </LinearLayout>
+</LinearLayout>

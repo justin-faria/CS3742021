@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ThreeButtons</string>
+    <string name="button_label_Hello">Hello</string>
+    <string name="button_label_FlipCoin">Flip Coin</string>
+    <string name="button_label_Roshambo">Roshambo</string>
+    <string name="Heads_text">Heads</string>
+    <string name="Tails_text">Tails</string>
+    <string name="Rock_text">Rock!</string>
+    <string name="Paper_text">Paper!</string>
+    <string name="Scissors_text">Scissors!</string>
+    <string name="Flipping_text">Flipping</string>
+</resources>
