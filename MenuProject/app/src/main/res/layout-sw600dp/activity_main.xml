@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+    <Button
+        android:id="@+id/sms_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
+        android:fontFamily="sans-serif-black"
+        android:onClick="openSMS"
+        android:text="@string/smsbtn_text"
+        android:textColor="@color/dkpink"
+        android:textSize="@dimen/text_sizetab" />
+
+    <Button
+        android:id="@+id/phone_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phonebtn_text"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/dkpink"
+        android:fontFamily="sans-serif-black"
+        android:textSize="@dimen/text_sizetab"
+        android:onClick="openCaller"/>
+
+    <Button
+        android:id="@+id/web_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/webbtn_text"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/dkpink"
+        android:fontFamily="sans-serif-black"
+        android:textSize="@dimen/text_sizetab"
+        android:onClick="openWeb"/>
+
+    <Button
+        android:id="@+id/map_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mapbtn_text"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/dkpink"
+        android:fontFamily="sans-serif-black"
+        android:textSize="@dimen/text_sizetab"
+        android:onClick="openMaps"/>
+
+    <Button
+        android:id="@+id/share_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sharebtn_text"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/dkpink"
+        android:fontFamily="sans-serif-black"
+        android:textSize="@dimen/text_sizetab"
+        android:onClick="shareText"/>
+
+    <Button
+        android:id="@+id/newactivity_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/newactivitybtn_text"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/dkpink"
+        android:fontFamily="sans-serif-black"
+        android:textSize="@dimen/text_sizetab"
+        android:onClick="openActivity"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/mhlogo" />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MenuProject</string>
+    <string name="smsbtn_text">SMS</string>
+    <string name="phonebtn_text">Phone</string>
+    <string name="webbtn_text">Web</string>
+    <string name="mapbtn_text">Map</string>
+    <string name="sharebtn_text">Share</string>
+    <string name="newactivitybtn_text">New Activity</string>
+    <string name="sharewith_text">Share the love</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_get_help">Get Help</string>
+</resources>
